@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eng/ Mohamed Hamdy</title>
+
+    <!-- box icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- remix icon link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- style link  -->
+    <link rel="stylesheet" href="./assests/CSS/style.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <a href="#" class="logo">Developer <span>m.h</span></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navList">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <div class="top-btnn">
+        <a href="#contact" class="h-btn">contact me</a>
+      </div>
+    </header>
+
+    <!-- hero  -->
+    <section class="hero" id="home">
+      <div class="main-content">
+        <h4>hi, there!</h4>
+        <h1>i'm <span>Mohamed hamdy</span></h1>
+        <p>front-end developer</p>
+        <div class="social">
+          <a href="https://www.facebook.com/medo.elshazly.526" target="_blank"
+            ><i class="ri-facebook-fill"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/abo__hamdy22?igsh=YmoxMXA4aHRiY2d2"
+            target="_blank"
+            ><i class="ri-instagram-fill"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mohamed-hamdy-5aa27b25a/"
+            target="_blank"
+            ><i class="ri-linkedin-fill"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=01004033869"
+            target="_blank"
+            ><i class="ri-whatsapp-fill"></i
+          ></a>
+        </div>
+        <div class="main-btn">
+          <a href="#contact" class="btn">hire me</a>
+          <a href="#" class="btn btn2" id="download-btn">View CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about  -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./assests/IMAGES/about.png" alt="img" />
+      </div>
+      <div class="about-text">
+        <h2>
+          i'm product <span>designer</span> <br />
+          & web developer
+        </h2>
+        <div class="exp-area">
+          <p class="exp">
+            experience:
+            <span>2 years</span>
+          </p>
+          <p class="exp">
+            specialty:
+            <span>product designer, developer</span>
+          </p>
+          <p class="exp">
+            address:
+            <span>egypt, elminya</span>
+          </p>
+          <p class="exp">
+            e-mail:
+            <span>m7md7amdy123@gmail.com</span>
+          </p>
+          <p class="exp">
+            phone:
+            <span>+201004033869</span>
+          </p>
+          <p class="exp">
+            freelancer:
+            <span>available</span>
+          </p>
+        </div>
+        <a href="#portfolio" class="btn">view all projects</a>
+      </div>
+    </section>
+
+    <!-- services  -->
+    <section class="services" id="services">
+      <div class="center-text">
+        <h2>my<span> services</span></h2>
+      </div>
+      <div class="services-content">
+        <div class="box">
+          <i class="bx bxs-camera bx-tada" style="color: #ffffff"></i>
+          <h3>portfolio websites</h3>
+          <p>
+            Anyone who develops a website to display their "portfolio"
+            effectively showcases their talents and accomplishments in a
+            professional and engaging manner. This approach simplifies the
+            process for potential clients
+          </p>
+        </div>
+        <div class="box mr">
+          <i class="bx bx-cube bx-tada" style="color: #ffffff"></i>
+          <h3>ui/ux design</h3>
+          <p>
+            UI/UX designs aren’t only a matter of functionality and performance,
+            but also ensure appealing visual interaction experience which makes
+            it an exciting and interesting thing to use the product.
+          </p>
+        </div>
+        <div class="box">
+          <i class="bx bxl-visual-studio bx-tada" style="color: #ffffff"></i>
+          <h3>E-commerce Websites</h3>
+          <p>
+            Anyone who constructs an "e-commerce" website establishes a digital
+            marketplace allowing buyers and sellers to engage in transactions
+            over the Internet, thereby broadening business horizons and
+            enhancing opportunities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio  -->
+    <section class="portfolio" id="portfolio">
+      <div class="center-text">
+        <h2>my <span>portfolio</span></h2>
+      </div>
+
+      <div class="portfolio-content">
+        <div class="row">
+          <img src="./assests/IMAGES/port-1.jpg" alt="image" />
+          <div class="main-row">
+            <div class="row-text">
+              <h5>website design</h5>
+            </div>
+            <div class="row-icon">
+              <i class="ri-github-fill"></i>
+            </div>
+          </div>
+          <h4>website development for agency</h4>
+        </div>
+
+        <div class="row">
+          <img src="./assests/IMAGES/port-2.jpg" alt="image" />
+          <div class="main-row">
+            <div class="row-text">
+              <h5>website design</h5>
+            </div>
+            <div class="row-icon">
+              <i class="ri-github-fill"></i>
+            </div>
+          </div>
+          <h4>website development for Transport of goods</h4>
+        </div>
+
+        <div class="row">
+          <img src="./assests/IMAGES/port-3.jpg" alt="image" />
+          <div class="main-row">
+            <div class="row-text">
+              <h5>website design</h5>
+            </div>
+            <div class="row-icon">
+              <i class="ri-github-fill"></i>
+            </div>
+          </div>
+          <h4>website development for Transform Text to speech</h4>
+        </div>
+
+        <div class="row">
+          <img src="./assests/IMAGES/port-4.jpg" alt="image" />
+          <div class="main-row">
+            <div class="row-text">
+              <h5>website design</h5>
+            </div>
+            <div class="row-icon">
+              <i class="ri-github-fill"></i>
+            </div>
+          </div>
+          <h4>website development for A tourism company</h4>
+        </div>
+
+        <div class="row">
+          <img src="./assests/IMAGES/port-5.jpg" alt="image" />
+          <div class="main-row">
+            <div class="row-text">
+              <h5>website design</h5>
+            </div>
+            <div class="row-icon">
+              <i class="ri-github-fill"></i>
+            </div>
+          </div>
+          <h4>website development for An airline</h4>
+        </div>
+
+        <div class="row">
+          <img src="./assests/IMAGES/port-6.jpg" alt="image" />
+          <div class="main-row">
+            <div class="row-text">
+              <h5>website design</h5>
+            </div>
+            <div class="row-icon">
+              <i class="ri-github-fill"></i>
+            </div>
+          </div>
+          <h4>website development for dashboard</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact  -->
+    <section class="contact" id="contact">
+      <div class="center-text">
+        <h2>contact <span>me</span></h2>
+      </div>
+      <div class="alert alert-success p-2 text-center" role="alert">
+        Message sended successfuly!
+      </div>
+      <div class="contactForm">
+        <form action="" id="contactForm">
+          <input
+            type="text"
+            placeholder="your name"
+            autocomplete="username"
+            name="username"
+            id="name"
+            required
+          />
+          <input
+            type="email"
+            placeholder="email address.."
+            autocomplete="email"
+            name="email"
+            id="email"
+            required
+          />
+          <textarea
+            name="msgContact"
+            id="msgContact"
+            cols="30"
+            rows="10"
+            placeholder="write message here..."
+            autocomplete="text"
+            required
+          ></textarea>
+          <button type="submit" class="send-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer>
+      <div class="copyright">
+        <p>2024 mohamed hamdy, all rights reserved</p>
+      </div>
+      <a href="#home" class="scroll-top">
+        <i class="ri-arrow-up-s-fill"></i>
+      </a>
+    </footer>
+    <!-- js link  -->
+    <script>
+      // JavaScript to set the href attribute and trigger the download
+      document
+        .getElementById("download-btn")
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent the default action
+
+          // URL of the file you want to download
+          var fileUrl = "/Hamdy CV.pdf";
+
+          // Set the href attribute to the file URL
+          this.href = fileUrl;
+
+          // Set the download attribute (optional but helpful)
+          this.setAttribute("download", "CV.pdf");
+
+          // Trigger the download
+          window.location.href = fileUrl;
+        });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assests/JS/main.js"></script>
+  </body>
+</html>
