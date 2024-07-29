@@ -38,7 +38,7 @@
 
   <body>
     <!-- header -->
-    <header>
+    <!-- <header>
       <a href="#" class="logo">Developer <span>m.h</span></a>
       <div class="bx bx-menu" id="menu-icon"></div>
       <ul class="navList">
@@ -51,10 +51,10 @@
       <div class="top-btnn">
         <a href="#contact" class="h-btn">contact me</a>
       </div>
-    </header>
+    </header> -->
 
     <!-- hero  -->
-    <section class="hero" id="home">
+    <!-- <section class="hero" id="home">
       <div class="main-content">
         <h4>hi, there!</h4>
         <h1>i'm <span>Mohamed hamdy</span></h1>
@@ -78,6 +78,39 @@
             target="_blank"
             ><i class="ri-whatsapp-fill"></i
           ></a>
+        </div>
+        <div class="main-btn">
+          <a href="#contact" class="btn">hire me</a>
+          <a href="#" class="btn btn2" id="download-btn">View CV</a>
+        </div>
+      </div>
+    </section> -->
+
+
+    <header>
+      <a href="#" class="logo">Developer <span>m.h</span></a>
+      <div class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></div>
+      <ul class="navList">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <div class="top-btnn">
+        <a href="#contact" class="h-btn">contact me</a>
+      </div>
+    </header>
+    <section class="hero" id="home">
+      <div class="main-content">
+        <h4>hi, there!</h4>
+        <h1>i'm <span>Mohamed hamdy</span></h1>
+        <p>front-end developer</p>
+        <div class="social">
+          <a href="https://www.facebook.com/medo.elshazly.526" target="_blank"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.instagram.com/abo__hamdy22?igsh=YmoxMXA4aHRiY2d2" target="_blank"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.linkedin.com/in/mohamed-hamdy-5aa27b25a/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=01004033869" target="_blank"><i class="ri-whatsapp-fill"></i></a>
         </div>
         <div class="main-btn">
           <a href="#contact" class="btn">hire me</a>
@@ -302,22 +335,17 @@
     </footer>
     <!-- js link  -->
     <script>
-      // JavaScript to set the href attribute and trigger the download
       document
         .getElementById("download-btn")
         .addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent the default action
+          event.preventDefault();
 
-          // URL of the file you want to download
           var fileUrl = "/Hamdy CV.pdf";
 
-          // Set the href attribute to the file URL
           this.href = fileUrl;
 
-          // Set the download attribute (optional but helpful)
           this.setAttribute("download", "CV.pdf");
 
-          // Trigger the download
           window.location.href = fileUrl;
         });
     </script>
