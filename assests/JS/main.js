@@ -45,3 +45,8 @@ form.addEventListener("submit", (e) => {
 
   form.reset();
 });
+
+function toggleMenu() {
+  const navList = document.querySelector(".navList");
+  navList.classList.toggle("active");
+}
